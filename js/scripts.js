@@ -216,7 +216,6 @@ $(document).ready(function () {
 
         $.post('https://script.google.com/macros/s/AKfycbwSKISSYk5j6-AHznnYJBxpD6CCpL67hEZlr2piwkE9VWNd2tw/exec', data)
             .done(function (data) {
-                console.log(data);
                 $('#alert-wrapper').html('');
                 $('#rsvp-modal').modal('show');
             })

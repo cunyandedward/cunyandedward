@@ -129,6 +129,7 @@ Animations
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  z-index: 2;
 }
 @keyframes floating-arrow {
   from {
@@ -250,9 +251,20 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
+.hero-heading--container,
+.rsvp-button--container {
+  z-index: 2;
+}
+
+.hero-heading {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 8rem;
+  color: #fff;
+}
+
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/cuny-edward-2.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -275,7 +287,7 @@ Hero
     color: $txt-light;
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .hero-content {
     padding-top: 40%;
@@ -284,7 +296,21 @@ Hero
     width: 55%;
     margin-bottom: 12%;
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    display: block;
+    background: rgba(0, 0, 0, .6);
+  }
 }
+
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
@@ -321,7 +347,6 @@ header {
     height: 19px;
   }
   ul.primary-nav {
-    margin: 0 0 0 75px;
     padding: 0;
 
     li {

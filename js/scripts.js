@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Cuny & Edward's Gender Reveal",
+            title: "Baby Chan's Baby Shower",
 
             // Event start date
-            start: new Date('Sep 28, 2019 14:00'),
+            start: new Date('Dec 7, 2019 13:00'),
 
             // Event duration (IN MINUTES)
-            duration: 360,
+            duration: 300,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 20:00'),
+            // end: new Date('Nov 29, 2017 20:00'),
 
             // Event Address
-            address: '251 Rhodes Avenue, Hempstead, NY 11550',
+            address: '303 Main St, Hempstead, NY 11550',
 
             // Event Description
-            description: "We can't wait to see you at the gender reveal. For any queries or issues contact Ms. Cuny EliasMr. Edward Chan at +6465759727."
+            description: "We can't wait to see you at the baby shower! For any queries or issues, contact Cuny Elias (516-513-2703) or Edward Chan (646-575-9727)."
         }
     });
 

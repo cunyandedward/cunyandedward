@@ -23,7 +23,8 @@
           <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
           <meta property="og:type" content="website">
           <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-          <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+          <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+          <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
           <link rel="manifest" href="manifest.json">
           <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
           <link rel="stylesheet" href="css/normalize.min.css">
@@ -35,6 +36,15 @@
           <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
           <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
           <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150647237-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-150647237-1');
+          </script>
           <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         </head>
         <body id="top">
@@ -51,13 +61,10 @@
                     <nav>
                       <ul class="primary-nav">
                         <li>
-                          <a href="#gender_reveal">Gender Reveal</a>
-                        </li>
-                        <li>
                             <a href="#baby_shower">Baby Shower</a>
                         </li>
                         <li>
-                          <a href="#">Baby Registry</a>
+                          <a href="https://www.babylist.com/baby-reg-cuny" target="_blank">Baby Registry</a>
                         </li>
                       </ul>
                       <ul class="member-actions">
@@ -76,7 +83,7 @@
                 <div class="col-md-10 col-md-offset-1 hero-heading--container">
                   <div class="hero-content text-center">
                     <h1 class="hero-heading">Cuny & Edward</h1>
-                    <p class="intro">We're adding a new addition to our family!</p>
+                    <p class="intro">We're adding a new addition to our family! Join us for our baby shower!</p>
                   </div>
                 </div>
               </div>
@@ -109,12 +116,14 @@
               </div>
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                  <div class="wp3" id="gender_reveal">
+                  <div class="wp3" id="baby_shower">
                     <h3>Baby Shower</h3>
-                    <h5>Saturday, December 7th, 2019</h5>
-                    <p class="time">1:00PM - 6:00PM
-                    </h5>
-                    <p>Join us for Baby Chan's Baby Shower! RSVP below.</p>
+                    <p>Join us for Baby Chan's Baby Shower! <a href="#rsvp">RSVP below</a>.</p>
+                    <h5>Saturday, December 7<sup>th</sup>, 2019</h5>
+                    <p class="time">1:00PM - 6:00PM</p>
+                    <p class="address">303 Main Street<br>
+                    Hempstead, NY 11550</p>
+
                   </div>
                 </div>
                 <!-- <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
@@ -280,8 +289,16 @@
                     <div class="row">
                       <div class="col-md-12 col-sm-6">
                         <div class="form-input-group">
+                          <i class="fa fa-phone"></i><input type="tel" name="phone" class=""
+                            placeholder="Phone number">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 col-sm-6">
+                        <div class="form-input-group">
                           <i class="fa fa-users"></i><input type="number" name="guests" class="" min="0"
-                            placeholder="Number of guests">
+                            placeholder="Number of guests (including yourself)">
                         </div>
                       </div>
                     </div>
@@ -309,7 +326,7 @@
               <div class="row">
                 <div class="col-sm-12 text-center content">
                   <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                  <p>Crafted by Edward with lots of <span class="fa fa-heart pulse2"></span> for Cuny</p>
+                  <span class="fa fa-heart pulse2"></span>
                 </div>
               </div>
             </div>

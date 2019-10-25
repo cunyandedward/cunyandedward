@@ -263,14 +263,21 @@ Hero
 }
 
 .hero {
+  background-image: url('../img/baby_shower_hero.jpeg');
   min-height: 1600px;
-  background: url('../img/baby_shower_hero.jpeg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
+
+  @media only screen and (min-width: 600px) {
+    background-image: url('../img/baby_shower_hero.jpeg');
+    background-position: initial;
+  }
 
   /*.rsvp-btn {
     position: absolute;
